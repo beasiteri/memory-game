@@ -1,5 +1,8 @@
 /* variable */
 const card = document.querySelector('.deck');
+const star = document.querySelectorAll('.stars i');
+const refresh = document.querySelector('.restart');
+const list = document.querySelectorAll('.card');
 const array = [];
 let moves = 0;
 
@@ -75,6 +78,14 @@ function changeStarColor() {
     moves = 0;
 }
 
+// when the refresh ikon is clicked start a new game 
+refresh.addEventListener('click', function (event) {
+    const target = event.target;
+    if (target.nodeName === 'I') {
+        restartGame(target);
+    }
+});
+
 // restart the game
 function restartGame(event) {
     for (let i = 0; i < list.length; i++) {
@@ -84,4 +95,6 @@ function restartGame(event) {
     }
     changeStarColor();
 }
+
+
 
