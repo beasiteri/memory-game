@@ -1,5 +1,7 @@
+/* variable */
 const card = document.querySelector('.deck');
 const array = [];
+let moves = 0;
 
 /* when the card is clicked check the target and call the openCard() function on that target */
 card.addEventListener('click', function (event) {
@@ -61,5 +63,15 @@ function checkMatch() {
             changeStarColor();
         }, 700);
     }
+}
+
+/* change the star's color when the two cards don't match */
+function changeStarColor() {
+    // change the color of stars to black
+    for (var i = 0; i < 10; i++) {
+        star[i].style.color = 'black';
+    }
+    // reset the moves to zero
+    moves = 0;
 }
 
