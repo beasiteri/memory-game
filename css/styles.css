@@ -21,3 +21,11 @@ body {
     font-family: 'Coda', cursive;
 }
 
+/* Style the container with Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
