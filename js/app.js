@@ -9,3 +9,12 @@ card.addEventListener('click', function (event) {
     }
 });
 
+// open the card that was clicked - add or remove classes
+function openCard(event) {
+    if (event.classList.contains('open', 'show') === false) {
+        event.classList.add('open', 'show');
+    } else {
+        event.classList.remove('open', 'show');
+    }
+}
+
