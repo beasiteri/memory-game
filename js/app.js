@@ -18,3 +18,13 @@ function openCard(event) {
     }
 }
 
+// check if there are two cards in the array
+function pushArray(event) {
+    if (array.length === 0) {
+        array.push(event);
+    } else if (array.length === 1) {
+        array.push(event);
+        checkMatch();
+    }
+}
+
