@@ -15,7 +15,6 @@ The game ends once all cards have been correctly matched.
 ## Screenshot of the page
 ![](img/screencapture-memoryGame-project.png)
 
-
 # External Resources Used
 - [HTML Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/index.html)
 - [CSS Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/css.html)
