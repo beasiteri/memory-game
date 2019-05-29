@@ -75,3 +75,13 @@ function changeStarColor() {
     moves = 0;
 }
 
+// restart the game
+function restartGame(event) {
+    for (let i = 0; i < list.length; i++) {
+        if (list[i].classList.contains('open', 'show', 'match')) {
+            list[i].classList.remove('open', 'show', 'match');
+        }
+    }
+    changeStarColor();
+}
+
